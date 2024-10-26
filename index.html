@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: cursive;
+      margin: 0;
+      padding: 0;
+      color: #1b55f5;
+      background-color: #d9e8ff;
+    }
+
+    .container {
+      background-color: #d9e8ff;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      width: 90%;
+      max-width: 1200px;
+      height: auto;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .left {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .left h1 {
+      font-size: 2.5em;
+      margin: 10px;
+    }
+
+    .left p {
+      border: 2px dashed #1b55f5;
+      border-radius: 20px;
+      padding: 10px;
+    }
+
+    .left img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border: 2px dashed #1b55f5;
+      border-radius: 20px;
+    }
+
+    .right {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .top-boxes {
+      display: flex;
+      justify-content: flex-end;
+      margin: 10px;
+      gap: 10px;
+    }
+
+    .top-box {
+      width: 50px;
+      height: 25px;
+      background-color: #d9e8ff;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .top-box:nth-child(2) {
+      background-color: #8ec0ff;
+    }
+
+    .top-box:nth-child(3) {
+      background-color: #1b55f5;
+      color: #d9e8ff;
+    }
+
+    .contacts {
+      border: 2px dashed #1b55f5;
+      padding-left: 20px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      background-color: #8ec0ff;
+    }
+
+    .contacts img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .box {
+      background-color: #8ec0ff;
+      border-radius: 20px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .dashed-border-white {
+      margin: 5px;
+      border: 2px dashed #ffffff;
+      border-radius: 20px;
+      padding-left: 10px; 
+    }
+
+    .dashed-border-white ul {
+      padding-left: 20px;
+    }
+
+    .dashed-border-white li {
+      padding-left: 50px;
+      color: #1b55f5;
+      text-shadow: 2px 1px 0px #d9e8ff;
+    }
+
+    @media screen and (max-width: 660px) {
+      .container {
+        grid-template-columns: 1fr; 
+      }
+
+      .left{
+        text-align: center; 
+      }
+
+      .right{
+        text-align: left;
+      }
+
+      .top-boxes {
+        justify-content: right; 
+        padding-right: 10px;
+      }
+
+      .top-box {
+        width: 40px; 
+        height:20px;
+        text-align: center;
+      }
+
+      .contacts img {
+        width: 18px; 
+        height: 18px;
+      }
+
+      .left h1 {
+        font-size: 2em;
+      }
+
+      .left p, .contacts {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-boxes">
+    <div class="top-box">projects</div>
+    <a href="journal.html" class="top-box">1</a>
+    <a href="feedback.html" class="top-box">2</a>
+
+  </div>
+
+  <div class="container">
+    <div class="left">
+      <div class="img-area"><img src="images/prof.png" alt="Profile Picture"></div>
+      <h1>JENFIEL TOMARONG</h1>
+      <h2>2023-2024 BSIT-3A</h2>
+      <p>A student, currently pursuing Bachelor of Science in Information Technology at Cordova Public College.</p>
+    </div>
+
+    <div class="right">
+      <div class="contacts">
+        <h3><strong>CONTACTS</strong></h3>
+        <p><img src="images/phone.png" alt="Phone"> 09215876042</p>
+        <p><img src="images/mail.png" alt="Email"> j.jejune18@gmail.com</p>
+        <p><img src="images/location.png" alt="Location"> Suba-Masulog Basak Lapu-lapu City, Cebu</p>
+      </div>
+
+      <div class="box">
+        <div class="dashed-border-white">
+          <h3>FAVORITE MAJOR SUBJECTS</h3>
+          <ul><strong>First year: Basic Electronics</strong></ul>
+              <li>Learn how electricity works and how to build simple circuits.</li>
+          <ul><strong>Second year: Digital Logic Design</strong></ul>
+              <li>Dig into the fundamentals building blocks of digital systems.</li>
+          <ul><strong>Third year: Application Development</strong></ul>
+              <li>Learn how to create apps for phones computers and the web.</li>
+        </div>    
+      </div>
+    </div>
+  </div>
+</body>
+</html>
